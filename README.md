@@ -3,4 +3,5 @@ The program XrayTube-commands.py can be used to change the following settings of
 - voltage
 - current
 - open and close shutters
+
 For more information about the used functions, please take a look in the documentation html/index.html
