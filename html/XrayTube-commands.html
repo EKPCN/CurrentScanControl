@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>XrayTube-commands.py &mdash; XrayTube Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="XrayTube Documentation 1.0 documentation" href="index.html" />
+    <link rel="next" title="currentMeasurement-XrayTube.py" href="currentMeasurement-XrayTube.html" />
+    <link rel="prev" title="Python programs to control basic functions of Xray Tube ISO-Debyeflex 3003: EKP, KIT" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="currentMeasurement-XrayTube.html" title="currentMeasurement-XrayTube.py"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Python programs to control basic functions of Xray Tube ISO-Debyeflex 3003: EKP, KIT"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">XrayTube Documentation 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="xraytube-commands-py">
+<h1><strong>XrayTube-commands.py</strong><a class="headerlink" href="#xraytube-commands-py" title="Permalink to this headline">¶</a></h1>
+<p><strong>Documentation</strong></p>
+<p>This documentation gives a short description of the used functions in the program &#8220;XrayTube-commands.py&#8221;</p>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<dl class="function">
+<dt id="testCurrent">
+<code class="descname">testCurrent</code><span class="sig-paren">(</span><em>int_current_mA</em><span class="sig-paren">)</span><a class="headerlink" href="#testCurrent" title="Permalink to this definition">¶</a></dt>
+<dd><p>function tests, if int_current_mA is in the range of current of the Xray tube</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>int_current_mA</strong> &#8211; desired current</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True or False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="setCurrent">
+<code class="descname">setCurrent</code><span class="sig-paren">(</span><em>int_current_mA</em><span class="sig-paren">)</span><a class="headerlink" href="#setCurrent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set current of Xray tube after getting a current in the range, check if current is set succesfully</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>int_current_mA</strong> &#8211; desired current</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True or False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="nominalCurrent">
+<code class="descname">nominalCurrent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nominalCurrent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read status word for nominal current</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">integer in micro ampere</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="actualCurrent">
+<code class="descname">actualCurrent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#actualCurrent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read status word for actual current</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">integer in micro ampere</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="testVoltage">
+<code class="descname">testVoltage</code><span class="sig-paren">(</span><em>int_voltage_kV</em><span class="sig-paren">)</span><a class="headerlink" href="#testVoltage" title="Permalink to this definition">¶</a></dt>
+<dd><p>function tests, if int_voltage_kV is in the range of voltage of the Xray tube</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True or False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="setVoltage">
+<code class="descname">setVoltage</code><span class="sig-paren">(</span><em>int_voltage_kV</em><span class="sig-paren">)</span><a class="headerlink" href="#setVoltage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set voltage of Xray tube after getting a voltage in the range, check if voltage is set succesfully</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>int_voltage_kV</strong> &#8211; desired voltage</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True or False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="nominalVoltage">
+<code class="descname">nominalVoltage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nominalVoltage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read status word for nominal voltage</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">integer in volt</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="actualVoltage">
+<code class="descname">actualVoltage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#actualVoltage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read status word for actual voltage</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">integer in volt</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="openShutter">
+<code class="descname">openShutter</code><span class="sig-paren">(</span><em>int_shutternumber</em><span class="sig-paren">)</span><a class="headerlink" href="#openShutter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open Shutter 2 or 3 after checking, if shutternumber is correctly given, check status of shutters afterwards</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>int_shutternumber</strong> &#8211; shutternumber (2 or 3)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">statusRead3() or statusRead4() for shutter 2 or 3</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="closeShutter">
+<code class="descname">closeShutter</code><span class="sig-paren">(</span><em>int_shutternumber</em><span class="sig-paren">)</span><a class="headerlink" href="#closeShutter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close Shutter 2 or 3 after checking, if shutternumber is correctly given, check status of shutters afterwards</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>int_shutternumber</strong> &#8211; shutternumber (2 or 3)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">statusRead3() or statusRead4() for shutter 2 or 3</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="statusRead3">
+<code class="descname">statusRead3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#statusRead3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read and print status of shutter 2; if unexpected status word is received, the program will end with a warning, check status of shutters manually!!!</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True (shutter 2 opened) or False (shutter 2 closed)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="statusRead4">
+<code class="descname">statusRead4</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#statusRead4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read and print status of shutter 3; if unexpected status word is received, the program will end with a warning, check status of shutters manually!!!</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True (shutter 3 opened) or False (shutter 3 closed)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="actSettings">
+<code class="descname">actSettings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#actSettings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check and print actual Settings of the Xray tube (nominal and actual current, nominal and actual voltage and status of shutter 2 and 3)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter"><strong>Python programs to control basic functions of Xray Tube ISO-Debyeflex 3003: EKP, KIT</strong></a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="currentMeasurement-XrayTube.html"
+                        title="next chapter"><strong>currentMeasurement-XrayTube.py</strong></a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/XrayTube-commands.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, Roland Koppenhoefer.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.3</a>
+      
+      |
+      <a href="_sources/XrayTube-commands.txt"
+          rel="nofollow">Page source</a></li>
+    </div>
+
+    
+
+    
+  </body>
+</html>
